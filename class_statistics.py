@@ -5,12 +5,14 @@ notas = [
     {"nome": "Maria", "nota": 7},
     {"nome": "Luis", "nota": 9.5},
 ]
-# 2 List comprehension
+# 2 List comprehension (cria uma lista)
+# ["Ana", "Bruno", "Carla"]
 aprovados = [k["nome"] for k in notas if k["nota"] >= 9.5]
 
 
 
-# 3 dict comprehension
+# 3 dict comprehension (cria um dicionario)
+# Exemplo: {"Ana": 10.0, "Bruno": 9.8, "Carla": 9.5}
 aprovadosKeyValue = {no["nome"]: no["nota"] for no in notas if no["nota"] >= 9.5}
 
 # 4
